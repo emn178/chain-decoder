@@ -6,13 +6,13 @@
 
     var execute = function () {
       try {
-        var result = chainDecode(input.val());
+        var result = chainDecode(input.val().replace(/\n/g, ''));
         var str = '';
-        str += 'Duration in days: ' + result.durationInDays + '\n';
-        str += 'Target: ' + result.target + '\n';
-        str += 'Owner address: ' + result.ownerAddress + '\n';
-        str += 'Name: ' + result.name.replace(/\0/g, '') + '\n';
-        str += 'Description: ' + result.description.replace(/\0/g, '') + '\n';
+        str += '自發起日起到期：' + result.durationInDays + '\n';
+        str += '集資目標：' + result.target + '\n';
+        str += '發起人地址：' + result.ownerAddress + '\n';
+        str += '專案名稱：' + result.name.replace(/\0/g, '') + '\n';
+        str += '專案編號：' + result.description.replace(/\0/g, '') + '\n';
         output.val(str);
       } catch(e) {
         output.val(e);

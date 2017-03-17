@@ -2,7 +2,7 @@
 ChainChain input data decoder
 
 ## Demo
-[Demo](https://emn178.github.io/chain-decoder/samples/demo/)
+[Demo](https://emn178.github.io/chain-decoder/)
 
 ## Download
 [Compress](https://raw.github.com/emn178/chain-decoder/master/build/chain-decoder.min.js)  
